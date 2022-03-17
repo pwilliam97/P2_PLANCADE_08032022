@@ -1,18 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
+
+body {
+    font-family: Raleway;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+h3 {
+    font-size: 18px;
+    
+}
+
+
 /* CSS HEADER */
+/* BANDEAU */
 #header {
     border : 1px solid black;
 }
 
-#bandeau{
+#bandeau {
     display: flex;
     justify-content: space-between;
     align-items: center;   
 }
 
 #logo {
-    width: 120px; 
-    height: 100px;
+    width: 100px; 
+    height: 80px;
     object-fit: contain;
     margin-left: 20px;
 }
@@ -20,7 +38,6 @@
 #menu {
     width: 30%;
     margin-right: 20px;
-    font-family: Raleway;
     font-weight: bold;
 }
 
@@ -47,5 +64,167 @@ a:hover {
     padding-top: 30px;
 }
 
-/* CSS BANDEAU */
+/* INTRO */
+
+header p {
+    margin-left: 10px;
+    font-size: 15px;
+}
   
+/* BARRE DE RECHERCHE */
+
+#navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin-left: 10px;
+    width: 20%;
+    height: 45px;
+}
+
+#position{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    width: 13%;
+    background-color: rgb(242, 242, 242);
+}
+
+#search-input {
+   font-weight: bold;
+   width: 57%;
+   outline: none;
+   font-size: 110%;
+   border-left: none;
+   border-right: none;
+   border-top: 1px solid rgb(242, 242, 242);
+   border-bottom: 1px solid rgb(242, 242, 242);
+}
+
+#search-buton { 
+    border: none;
+    background-color: #0065FC;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    width: 30%;
+    font-weight: bold;
+    font-size: 110%;
+}
+
+/* FILTRES */
+
+#filtre {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 55%;
+    margin-left: 10px;
+}
+
+#filtre-economique {
+    border: 2px solid rgb(218, 218, 218);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    width: 180px;
+    height: 45px;
+}
+
+#economique {
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+#filtre-familial {
+    border: 2px solid rgb(218, 218, 218);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    width: 140px;
+    height: 45px;
+}
+
+#familial {
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+#filtre-romantique {
+    border: 2px solid rgb(218, 218, 218);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    width: 180px;
+    height: 45px;
+}
+
+#romantique {
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+#filtre-animaux {
+    border: 2px solid rgb(218, 218, 218);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    width: 230px;
+    height: 45px;
+}
+
+#animaux {
+    border: none;
+    background: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.bleu {
+    color: #0065FC;  
+    border: 2px solid rgb(222, 235, 255);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(222, 235, 255);
+    margin-left: -1px;
+}
+
+/* INFOS */
+
+#information {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+}
+
+.info{ 
+    color: #0065FC;
+    border: 2px solid rgb(222, 235, 255);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
