@@ -9,6 +9,7 @@
     <title>Document</title>
 </head>
 <body>
+    <!-- HEADER -->
     <header id="header">
         <div id="bandeau">
             <img src="images/logo/Booki.png" id="logo">
@@ -32,19 +33,19 @@
             <h2>Filtres</h2>
             <div id="filtre-economique">
                 <i class="fa-solid fa-money-bill-wave bleu"></i>
-                <button id="economique">Économique</button>
+                <button id="economique" class="button-animation">Économique</button>
             </div>
             <div id="filtre-familial">
                 <i class="fa-solid fa-child bleu"></i>
-                <button id="familial">Familial</button>
+                <button id="familial" class="button-animation">Familial</button>
             </div>
             <div id="filtre-romantique">
                 <i class="fa-solid fa-heart bleu"></i>
-                <button id="romantique">Romantique</button>
+                <button id="romantique" class="button-animation">Romantique</button>
             </div>
             <div id="filtre-animaux">
                 <i class="fa-solid fa-dog bleu"></i>
-                <button id="animaux">Animaux autorisés</button>
+                <button id="animaux" class="button-animation">Animaux autorisés</button>
             </div>
         </div>
         <div id="information">
@@ -52,14 +53,17 @@
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
         </div>
     </header>
+    <!-- MAIN -->
     <main id="main">
         <div id="hebergement-populaire">
+            <!-- SECTION HEBERGEMENT -->
             <section id="section-hebergement">
                 <div id="hebergement">
                     <div>
-                        <h1>Hébergements à Marseille</h1>
+                        <h1 id="titre-hebergement">Hébergements à Marseille</h1>
                     </div>
                     <div id="first-line">
+                        <!-- CARD AUBERGE DE LA CANNEBIERE -->
                         <div class="card-hebergement">
                             <a href="#">
                                 <div class="card-image-hebergement">
@@ -77,6 +81,7 @@
                                 </div>
                             </a>    
                         </div>
+                        <!-- CARD HOTEL DU PORT -->
                         <div class="card-hebergement">
                             <a href="#">
                                 <div class="card-image-hebergement">
@@ -94,6 +99,7 @@
                                 </div>
                             </a>    
                         </div>
+                        <!-- CARD HOTEL LES MOUETTES-->
                         <div class="card-hebergement">
                             <a href="#">
                                 <div class="card-image-hebergement">
@@ -113,6 +119,7 @@
                         </div>
                     </div>
                     <div id="second-line">
+                        <!-- CARD HOTEL DE LA MER -->
                         <div class="card-hebergement">
                             <a href="#">
                                 <div class="card-image-hebergement">
@@ -130,6 +137,7 @@
                                 </div>
                             </a>    
                         </div>
+                        <!-- CARD AUBERGE LE PANIER -->
                         <div class="card-hebergement">
                             <a href="#">
                                 <div class="card-image-hebergement">
@@ -147,6 +155,7 @@
                                 </div>
                             </a>    
                         </div>
+                        <!-- CARD HOTEL CHEZ AMINA -->
                         <div class="card-hebergement">
                             <a href="#">
                                 <div class="card-image-hebergement">
@@ -165,17 +174,19 @@
                             </a>    
                         </div>
                     </div>
-                   <div>
-                        <h2>Afficher plus</h2>
+                   <div id="afficher">
+                        <a href="#">Afficher plus</a>
                    </div>
                 </div>
             </section>
+            <!-- SECTION POPULAIRE -->
             <section id="section-populaire">
                 <div id="populaire">
                     <div id="entete">
                         <h1>Les plus populaires</h1>
-                        <i class="fa-regular fa-chart-line"></i>
+                        <i class="fa-solid fa-chart-line graph"></i>
                     </div>
+                    <!-- CARD LE SOLEIL DU MATIN -->
                     <div class="card-populaire">
                         <a href="#" class="ensemble-populaire">
                             <div class="card-image-populaire">
@@ -193,6 +204,7 @@
                             </div>
                         </a>    
                     </div>
+                    <!-- CARD AU COEUR DE L'EAU CHAMBRE D'HOTES -->
                     <div class="card-populaire">
                         <a href="#" class="ensemble-populaire">
                             <div class="card-image-populaire">
@@ -210,6 +222,7 @@
                             </div>
                         </a>    
                     </div>
+                    <!-- CARD HOTEL TOUT BLEU ET BLANC -->
                     <div class="card-populaire">
                         <a href="#" class="ensemble-populaire">
                             <div class="card-image-populaire">
@@ -230,6 +243,7 @@
                 </div>
             </section>
         </div>
+        <!-- ACTIVITES -->
     </main>
 </body>
 </html>

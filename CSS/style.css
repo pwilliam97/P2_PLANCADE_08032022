@@ -112,7 +112,6 @@ header p {
 }
 
 /* FILTRES */
-
 #filtre {
     margin-top: 30px;
     display: flex;
@@ -138,6 +137,8 @@ header p {
     font-weight: bold;
     font-size: 18px;
     margin-left: 5px;
+    transition: 0.6s linear;
+    cursor: pointer;
 }
 
 #filtre-familial {
@@ -156,6 +157,8 @@ header p {
     font-weight: bold;
     font-size: 18px;
     margin-left: 5px;
+    transition: 0.6s linear;
+    cursor: pointer;
 }
 
 #filtre-romantique {
@@ -174,6 +177,8 @@ header p {
     font-weight: bold;
     font-size: 18px;
     margin-left: 5px;
+    transition: 0.6s linear;
+    cursor: pointer;
 }
 
 #filtre-animaux {
@@ -191,6 +196,8 @@ header p {
     background: none;
     font-weight: bold;
     font-size: 18px;
+    transition: 0.6s linear;
+    cursor: pointer;
 }
 
 .bleu {
@@ -204,6 +211,10 @@ header p {
     justify-content: center;
     background-color: rgb(222, 235, 255);
     margin-left: -1px;
+}
+
+button:hover {
+    color: #0065FC;
 }
 
 /* INFOS */
@@ -231,20 +242,15 @@ header p {
 
 #hebergement-populaire {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
-    width: 100%;
 }
 
 #section-hebergement {
     width: 65%;
-    height: 100%;
 }
 
 #section-populaire {
     width: 30%;
-    height: 100%;
 }
 
 .prix {
@@ -253,33 +259,35 @@ header p {
 
 /* BLOCK HEBERGEMENT A MARSEILLE */
 
-main h1 {
-    margin-left: 50px;
+#titre-hebergement {
+    margin: 0 0 30px 45px ;
+    width: 30%;
+    padding-top: 30px;
 }
 
-main h2{
+
+#afficher {
     margin-left: 45px;
-    margin-top: 20px;
+    margin-top: 30px;
+    font-weight: bold;
 }
 
 #hebergement { 
     background:rgb(242, 242, 242);
     width: 100%;
-    height: 650px;
+    height: 680px;
     border-radius: 30px;
     margin-left: 40px;
-    border: 1px solid black;
 }
 
 #first-line {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
+    margin-top: -10px;
 }
 
 #second-line {
     display: flex;
-    flex-direction: row;
     justify-content: space-evenly;
     margin-top: 30px;
 }
@@ -321,39 +329,44 @@ main h2{
 /* BLOCK LES PLUS POPULAIRES */
 
 #entete {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-top: 15px;
-    margin-left: -100px;
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+   margin-top: 20px;
+   margin-bottom: -20px;
+}
+
+.graph {
+    font-size: 25px;
+    margin-right: 40px;
 }
 
 #populaire {
     background:rgb(242, 242, 242);
     width: 100%;
-    height: 650px;
+    height: 680px;
     border-radius: 30px;
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-populaire {
+    width: 90%;
+    border-radius: 30px;
+    background: white;
+    margin-top: 45px;
+    margin-left: 5px;  
 }
 
 .ensemble-populaire {
     display: flex;
     flex-direction: row;
 }
-.card-populaire {
-    width: 95%;
-    border-radius: 30px;
-    background: white;
-    margin-top: 20px;
-    margin-left: 15px;
-    border: 1px solid black ;   
-}
 
 .card-image-populaire {
-    width: 60%;
     margin-left: 5px;
-    border: 1px solid black ;
 }
 
 .img-populaire { 
@@ -363,16 +376,16 @@ main h2{
     border-bottom-left-radius: 30px;
     margin-top: 5px;
     object-fit: cover;
-    border: 1px solid black ;
 }
 
 .card-body-populaire {
-    border: 1px solid black ;
+    margin-left: 25px;
+    width: 50%;
 }
 
 .card-title-populaire {
     font-weight: bold;
-    margin-top: -15px;
+    margin-top: 10px;
 }
 
 .card-info-populaire {
