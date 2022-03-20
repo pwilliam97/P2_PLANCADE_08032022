@@ -565,3 +565,46 @@ button:hover {
     object-fit: cover;
     border-radius: 30px;
 }
+
+
+
+/* CSS FOOTER */
+#renseignements {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 100%;
+    height: 300px;
+    margin-top: 40px;
+    background: rgb(242, 242, 242);
+}
+
+#footer-propos { 
+    display: flex;
+    flex-direction: column;
+    margin-right: 300px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+#footer-hebergement {
+    display: flex;
+    flex-direction: column;
+    margin-right: 300px;
+    margin-top: 40px;
+}
+
+#footer-assistance {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.block-renseignements {
+    display: flex;
+    flex-direction: column;
+}
+
+footer a {
+    margin-top: 20px;
+}
