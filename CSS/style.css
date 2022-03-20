@@ -137,8 +137,9 @@ header p {
     font-weight: bold;
     font-size: 18px;
     margin-left: 5px;
-    transition: 0.6s linear;
+    transition: 0.5s linear;
     cursor: pointer;
+    font-family: Raleway;
 }
 
 #filtre-familial {
@@ -157,8 +158,9 @@ header p {
     font-weight: bold;
     font-size: 18px;
     margin-left: 5px;
-    transition: 0.6s linear;
+    transition: 0.5s linear;
     cursor: pointer;
+    font-family: Raleway;
 }
 
 #filtre-romantique {
@@ -177,8 +179,9 @@ header p {
     font-weight: bold;
     font-size: 18px;
     margin-left: 5px;
-    transition: 0.6s linear;
+    transition: 0.5s linear;
     cursor: pointer;
+    font-family: Raleway;
 }
 
 #filtre-animaux {
@@ -196,8 +199,9 @@ header p {
     background: none;
     font-weight: bold;
     font-size: 18px;
-    transition: 0.6s linear;
+    transition: 0.5s linear;
     cursor: pointer;
+    font-family: Raleway; 
 }
 
 .bleu {
@@ -238,6 +242,11 @@ button:hover {
     font-size: 10px;
 }
 
+
+
+
+
+
 /* CSS MAIN */
 
 #hebergement-populaire {
@@ -257,7 +266,30 @@ button:hover {
     font-weight: bold;
 }
 
-/* BLOCK HEBERGEMENT A MARSEILLE */
+.note-star-hebergement {
+    display: flex;
+    margin-top: -8px;
+    margin-left: -2px;
+}
+
+.note-star-populaire {
+    display: flex;
+    margin-top: 30px;
+}
+
+.note-bleu {
+    color: #0065FC;
+}
+
+.note-gris {
+    color: rgb(217, 217, 217);
+}
+
+
+
+
+
+    /* BLOCK HEBERGEMENT A MARSEILLE */
 
 #titre-hebergement {
     margin: 0 0 30px 45px ;
@@ -326,7 +358,11 @@ button:hover {
 }
 
 
-/* BLOCK LES PLUS POPULAIRES */
+
+
+
+
+    /* BLOCK LES PLUS POPULAIRES */
 
 #entete {
    display: flex;
@@ -390,4 +426,142 @@ button:hover {
 
 .card-info-populaire {
     margin-top: -15px;
+}
+
+
+
+
+
+/* ACTIVITES A MARSEILLE */
+
+#activite {
+    width: 98%;
+    height: 600px;
+    margin-left: 40px;   
+    margin-top: 30px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+#activity-title {
+    height: 50px;
+    width: 100%;
+    margin-left: -30px;
+}
+
+#activity-column {
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.activity-text {
+    margin-left: 20px;
+}
+    /* PREMIERE ET TROISIEME COLONNE */
+
+#first-colonne {
+    background: azure;
+    border-radius: 30px;
+    box-shadow: 0px 6px 5px rgb(242, 242, 242) ;
+    width: 400px;
+    height: 520px;
+}
+
+#third-colonne {
+    background: azure;
+    border-radius: 30px;
+    box-shadow: 0px 6px 5px rgb(242, 242, 242) ;
+    width: 400px;
+    height: 520px;
+}
+
+.grande-img {
+    width: 400px;
+    height: 470px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+    /* DEUXIEME COLONNE */
+
+#second-colonne {
+    background: azure;
+    border-radius: 30px;
+    width: 400px;
+    height: 500px;
+}
+
+        /* HAUT */
+#second-top {
+    width: 400px; 
+    height: 290px;
+    border-radius: 30px;
+    box-shadow: 0px 6px 5px rgb(242, 242, 242) ;
+}
+
+#img-top-second {
+    width: 400px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+        /* BAS */
+#second-bottom {
+    width: 400px;
+    height: 200px;
+    border-radius: 30px;
+    margin-top: 30px;
+    box-shadow: 0px 6px 5px rgb(242, 242, 242) ;
+}
+
+#img-bottom-second {
+    width: 400px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+    /* QUATRIEME COLONNE */
+
+#fourth-colonne {
+    background: azure;
+    border-radius: 30px;
+    width: 400px;
+    height: 500px;
+}
+
+        /* HAUT */
+#fourth-top {
+    width: 400px;
+    height: 230px;
+    border-radius: 30px;
+    box-shadow: 0px 6px 5px rgb(242, 242, 242);
+}
+
+#img-top-fourth {
+    width: 400px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+
+        /* BAS */
+#fourth-bottom {
+    width: 400px;
+    height: 260px;
+    border-radius: 30px;
+    margin-top: 30px;
+    box-shadow: 0px 6px 5px rgb(242, 242, 242);
+}
+
+#img-bottom-fourth {
+    width: 400px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 30px;
 }
