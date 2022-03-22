@@ -1,3 +1,5 @@
+
+/*FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
 
 body {
@@ -6,18 +8,22 @@ body {
 
 h1 {
     font-size: 20px;
-    font-weight: bolder;
     margin-left: 40px;
 }
 
 h2 {
-    font-size: 16px;
-    font-weight: 1500;
+    font-size: 20px;
+    margin-left: 40px;
 }
 
-/* CSS HEADER */
-/* BANDEAU */
+h3 {
+    font-size: 16px;
+}
 
+
+/* CSS HEADER */
+
+        /* Bandeau */
 #bandeau {
     display: flex;
     justify-content: space-between;
@@ -60,15 +66,13 @@ header a:hover {
     padding-top: 30px;
 }
 
-/* INTRO */
-
+        /* Intro */
 header p {
     margin-left: 40px;
     font-size: 15px;
 }
   
-/* BARRE DE RECHERCHE */
-
+        /* Barre de recherche */
 #navigation {
     display: flex;
     flex-direction: row;
@@ -111,7 +115,7 @@ header p {
     font-size: 110%;
 }
 
-/* FILTRES */
+        /* Filtres */
 #filtre {
     margin-top: 30px;
     display: flex;
@@ -221,7 +225,7 @@ button:hover {
     color: #0065FC;
 }
 
-/* INFOS */
+        /* Infos */
 
 #information {
     display: flex;
@@ -249,11 +253,13 @@ button:hover {
 
 /* CSS MAIN */
 
+        /* Ensemble */
 #hebergement-populaire {
     display: flex;
     justify-content: space-between;
 }
 
+        /* Sections */
 #section-hebergement {
     width: 65%;
 }
@@ -262,10 +268,12 @@ button:hover {
     width: 30%;
 }
 
+        /* Prix */
 .prix {
     font-weight: bold;
 }
 
+        /* Notation */
 .note-star-hebergement {
     display: flex;
     margin-top: -8px;
@@ -289,21 +297,23 @@ button:hover {
 
 
 
-    /* BLOCK HEBERGEMENT A MARSEILLE */
+/* BLOCK HEBERGEMENT A MARSEILLE */
 
+        /* Titre */
 #titre-hebergement {
     margin: 0 0 30px 45px ;
     width: 30%;
     padding-top: 30px;
 }
 
-
+        /* Afficher plus */
 #afficher {
     margin-left: 45px;
     margin-top: 30px;
     font-weight: bold;
 }
 
+        /* Gestion du block */
 #hebergement { 
     background:rgb(242, 242, 242);
     width: 100%;
@@ -311,18 +321,22 @@ button:hover {
     border-radius: 30px;
     margin-left: 40px;
 }
-
+    
+        /* Première ligne */
 #first-line {
     display: flex;
     justify-content: space-evenly;
     margin-top: -10px;
 }
 
+        /* Deuxième ligne */
 #second-line {
     display: flex;
     justify-content: space-evenly;
     margin-top: 30px;
 }
+
+        /* Gestion des Cards */
 .card-hebergement {
     width: 375px;
     height: 250px;
@@ -330,6 +344,7 @@ button:hover {
     background: white;
 }
 
+        /* Card Image */
 .card-image-hebergement {
     display: flex;
     justify-content: center;
@@ -344,26 +359,24 @@ button:hover {
     object-fit: cover;
 }
 
+        /* Card Texte */
 .card-body-hebergement {
     margin-left: 20px;
-    margin-top: -10px;
+    margin-top: -5px;
 }
-
-.card-title-hebergement {
-    font-weight: bold;
-}
-
+        
 .card-info-hebergement {
     margin-top: -15px;
 }
+        
 
 
 
 
 
+/* BLOCK LES PLUS POPULAIRES */
 
-    /* BLOCK LES PLUS POPULAIRES */
-
+        /* Titre */
 #entete {
    display: flex;
    align-items: center;
@@ -373,11 +386,13 @@ button:hover {
    margin-bottom: -20px;
 }
 
+        /* Icons */
 .graph {
     font-size: 25px;
     margin-right: 40px;
 }
 
+        /* Gestion du Block */
 #populaire {
     background:rgb(242, 242, 242);
     width: 100%;
@@ -388,11 +403,12 @@ button:hover {
     align-items: center;
 }
 
+        /* Gestion des cards */
 .card-populaire {
     width: 90%;
     border-radius: 30px;
     background: white;
-    margin-top: 45px;
+    margin-top: 20px;
     margin-left: 5px;  
 }
 
@@ -401,6 +417,7 @@ button:hover {
     flex-direction: row;
 }
 
+        /* Card Image */
 .card-image-populaire {
     margin-left: 5px;
 }
@@ -414,14 +431,10 @@ button:hover {
     object-fit: cover;
 }
 
+        /* Card Texte */
 .card-body-populaire {
     margin-left: 25px;
     width: 50%;
-}
-
-.card-title-populaire {
-    font-weight: bold;
-    margin-top: 10px;
 }
 
 .card-info-populaire {
@@ -432,8 +445,9 @@ button:hover {
 
 
 
-/* ACTIVITES A MARSEILLE */
+/* BLOCK ACTIVITES A MARSEILLE */
 
+        /* Ensemble */
 #activite {
     width: 98%;
     height: 600px;
@@ -444,12 +458,14 @@ button:hover {
     flex-direction: column;
 }
 
+        /* Titre */
 #activity-title {
     height: 50px;
     width: 100%;
     margin-left: -30px;
 }
 
+        /* Colonne */
 #activity-column {
     width: 100%;
     height: 500px;
@@ -458,13 +474,16 @@ button:hover {
     justify-content: space-between;
 }
 
+        /* Texte */
 .activity-text {
     margin-left: 20px;
+    margin-block-start: 0;
+    margin-top: 10px;
 }
-    /* PREMIERE ET TROISIEME COLONNE */
 
+    /* PREMIERE ET TROISIEME COLONNE */
 #first-colonne {
-    background: azure;
+    background: white;
     border-radius: 30px;
     box-shadow: 0px 6px 5px rgb(242, 242, 242) ;
     width: 400px;
@@ -472,7 +491,7 @@ button:hover {
 }
 
 #third-colonne {
-    background: azure;
+    background: white;
     border-radius: 30px;
     box-shadow: 0px 6px 5px rgb(242, 242, 242) ;
     width: 400px;
@@ -487,15 +506,14 @@ button:hover {
 }
 
     /* DEUXIEME COLONNE */
-
 #second-colonne {
-    background: azure;
+    background: white;
     border-radius: 30px;
     width: 400px;
     height: 500px;
 }
 
-        /* HAUT */
+        /* Haut */
 #second-top {
     width: 400px; 
     height: 290px;
@@ -510,7 +528,7 @@ button:hover {
     border-radius: 30px;
 }
 
-        /* BAS */
+        /* Bas */
 #second-bottom {
     width: 400px;
     height: 200px;
@@ -527,15 +545,14 @@ button:hover {
 }
 
     /* QUATRIEME COLONNE */
-
 #fourth-colonne {
-    background: azure;
+    background: white;
     border-radius: 30px;
     width: 400px;
     height: 500px;
 }
 
-        /* HAUT */
+        /* Haut */
 #fourth-top {
     width: 400px;
     height: 230px;
@@ -550,7 +567,7 @@ button:hover {
     border-radius: 30px;
 }
 
-        /* BAS */
+        /* Bas */
 #fourth-bottom {
     width: 400px;
     height: 260px;
@@ -568,6 +585,9 @@ button:hover {
 
 
 
+
+
+
 /* CSS FOOTER */
 #renseignements {
     display: flex;
@@ -579,27 +599,6 @@ button:hover {
     background: rgb(242, 242, 242);
 }
 
-#footer-propos { 
-    display: flex;
-    flex-direction: column;
-    margin-right: 300px;
-    margin-left: 40px;
-    margin-top: 40px;
-}
-
-#footer-hebergement {
-    display: flex;
-    flex-direction: column;
-    margin-right: 300px;
-    margin-top: 40px;
-}
-
-#footer-assistance {
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-}
-
 .block-renseignements {
     display: flex;
     flex-direction: column;
@@ -608,3 +607,29 @@ button:hover {
 footer a {
     margin-top: 20px;
 }
+
+    /* A PROPOS */
+#footer-propos { 
+    display: flex;
+    flex-direction: column;
+    margin-right: 300px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+    /* NOS HEBERGEMENTS */
+#footer-hebergement {
+    display: flex;
+    flex-direction: column;
+    margin-right: 300px;
+    margin-top: 40px;
+}
+
+    /* ASSISTANCE */
+#footer-assistance {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+
