@@ -4,6 +4,8 @@
 
 body {
     font-family: Raleway;
+    display: flex;
+    flex-direction: column;
 }
 
 h1 {
@@ -121,8 +123,9 @@ header p {
     display: flex;
     flex-direction: row;
     align-items: center;
-    width: 55%;
+    width: 80%;
     margin-left: 45px;
+    margin-right: 0px;
 }
 
 #filtre-economique {
@@ -633,3 +636,80 @@ footer a {
 }
 
 
+@media all and (max-width : 768px) {
+    /* HEADER */
+#bandeau {
+    flex-direction: column;
+}
+#navigation{
+    margin: none;
+}
+#filtre {
+    margin-left: 0px;
+    margin-right: 0px;
+    flex-wrap: wrap;
+}
+    /* MAIN */
+
+#hebergement-populaire {
+     flex-direction: column-reverse;
+    width: auto;
+}
+    /* SECTION HEBERGEMENT */
+
+#hebergement {
+    background: none;
+    width: max-content;
+    height: auto;
+}
+
+#titre-hebergement {
+    width: max-content;
+}
+#first-line {
+    flex-direction: column;
+    justify-content: center;
+}
+
+#second-line {
+    flex-direction: column;
+}
+    /* SECTION POPULAIRE */
+#section-populaire {
+    width: max-content;
+}
+    /* SECTION ACTIVITE */
+#activite {
+    height: auto;
+    width: max-content;
+}
+#activity-column {
+    flex-direction: column;
+}
+
+.grande-img, #img-top-second, #img-bottom-second, #img-bottom-fourth{
+    width: 400px;
+    height: 180px;
+}
+
+#first-colonne, #third-colonne, #second-bottom, #second-top, #fourth-bottom {
+    width: 400px;
+    height: 230px;
+}
+
+    /* FOOTER */
+#renseignements {
+    flex-direction: column;
+    height: auto;
+    width: max-content;
+    margin-top: 1000px;
+}
+#footer-hebergement {
+    margin-left:40px;
+}
+#footer-assistance {
+    margin-left:40px;
+}
+
+
+}
