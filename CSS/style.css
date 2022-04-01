@@ -1,715 +1,1057 @@
-
-/*FONT*/
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500&display=swap');
 
-body {
-    font-family: Raleway;
-    display: flex;
-    flex-direction: column;
-}
-
-h1 {
-    font-size: 20px;
-    margin-left: 40px;
-}
-
-h2 {
-    font-size: 20px;
-    margin-left: 40px;
-}
-
-h3 {
-    font-size: 16px;
-}
-
-
-/* CSS HEADER */
-
-        /* Bandeau */
-#bandeau {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;   
-}
-
-#logo {
-    width: 100px; 
-    height: 80px;
-    object-fit: contain;
-    margin-left: 60px;
-}
-
-#menu {
-    width: 30%;
-    margin-right: 20px;
-    font-weight: bold;
-}
-
-#liste {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 0;
-}
-
-.elements {
-    list-style-type: none;
-    color: black;
-}
-
-a {
-    color:black;
-    text-decoration: none;
-}
-
-header a:hover {
-    color:#0065FC;
-    border-top: 1px solid #0065FC;
-    padding-top: 30px;
-}
-
-        /* Intro */
-header p {
-    margin-left: 40px;
-    font-size: 15px;
-}
-  
-        /* Barre de recherche */
-#navigation {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    margin-left: 40px;
-    width: 20%;
-    height: 45px;
-}
-
-#position {
-    font-size: 18px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    width: 13%;
-    background-color: rgb(242, 242, 242);
-}
-
-#search-input {
-   font-weight: bold;
-   width: 57%;
-   outline: none;
-   font-size: 110%;
-   border-left: none;
-   border-right: none;
-   border-top: 1px solid rgb(242, 242, 242);
-   border-bottom: 1px solid rgb(242, 242, 242);
-}
-
-#search-buton { 
-    border: none;
-    background-color: #0065FC;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    color: white;
-    width: 30%;
-    font-weight: bold;
-    font-size: 110%;
-}
-
-        /* Filtres */
-#filtre {
-    margin-top: 30px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 80%;
-    margin-left: 45px;
-    margin-right: 0px;
-}
-
-#filtre-economique {
-    border: 2px solid rgb(218, 218, 218);
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
-    width: 180px;
-    height: 45px;
-}
-
-#economique {
-    border: none;
-    background: none;
-    font-weight: bold;
-    font-size: 18px;
-    margin-left: 5px;
-    transition: 0.5s linear;
-    cursor: pointer;
-    font-family: Raleway;
-}
-
-#filtre-familial {
-    border: 2px solid rgb(218, 218, 218);
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
-    width: 140px;
-    height: 45px;
-}
-
-#familial {
-    border: none;
-    background: none;
-    font-weight: bold;
-    font-size: 18px;
-    margin-left: 5px;
-    transition: 0.5s linear;
-    cursor: pointer;
-    font-family: Raleway;
-}
-
-#filtre-romantique {
-    border: 2px solid rgb(218, 218, 218);
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
-    width: 180px;
-    height: 45px;
-}
-
-#romantique {
-    border: none;
-    background: none;
-    font-weight: bold;
-    font-size: 18px;
-    margin-left: 5px;
-    transition: 0.5s linear;
-    cursor: pointer;
-    font-family: Raleway;
-}
-
-#filtre-animaux {
-    border: 2px solid rgb(218, 218, 218);
-    border-radius: 30px;
-    display: flex;
-    align-items: center;
-    margin-left: 50px;
-    width: 230px;
-    height: 45px;
-}
-
-#animaux {
-    border: none;
-    background: none;
-    font-weight: bold;
-    font-size: 18px;
-    transition: 0.5s linear;
-    cursor: pointer;
-    font-family: Raleway; 
-}
-
-.bleu {
-    color: #0065FC;  
-    border: 2px solid rgb(222, 235, 255);
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgb(222, 235, 255);
-    margin-left: -1px;
-}
-
-button:hover {
-    color: #0065FC;
-}
-
-        /* Infos */
-
-#information {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 40px;
-}
-
-.info{ 
-    color: #0065FC;
-    border: 2px solid rgb(222, 235, 255);
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 10px;
-}
-
-
-
-
-
-
-/* CSS MAIN */
-
-        /* Ensemble */
-#hebergement-populaire {
-    display: flex;
-    justify-content: space-between;
-}
-
-        /* Sections */
-#section-hebergement {
-    width: 65%;
-}
-
-#section-populaire {
-    width: 30%;
-}
-
-        /* Prix */
-.prix {
-    font-weight: bold;
-}
-
-        /* Notation */
-.note-star-hebergement {
-    display: flex;
-    margin-top: -8px;
-    margin-left: -2px;
-}
-
-.note-star-populaire {
-    display: flex;
-    margin-top: 30px;
-}
-
-.note-bleu {
-    color: #0065FC;
-}
-
-.note-gris {
-    color: rgb(217, 217, 217);
-}
-
-
-
-
-
-/* BLOCK HEBERGEMENT A MARSEILLE */
-
-        /* Titre */
-#titre-hebergement {
-    margin: 0 0 30px 45px ;
-    width: 30%;
-    padding-top: 30px;
-}
-
-        /* Afficher plus */
-#afficher {
-    margin-left: 45px;
-    margin-top: 30px;
-    font-weight: bold;
-}
-
-        /* Gestion du block */
-#hebergement { 
-    background:rgb(242, 242, 242);
-    width: 100%;
-    height: 680px;
-    border-radius: 30px;
-    margin-left: 40px;
-}
+    body{
+        font-family: Raleway;
+        display: flex;
+        flex-direction: column;
+    }
+       
+    h1 {
+        font-size: 20px;
+    }
     
+    h2 {
+        font-size: 20px;
+        margin-left: 2%;
+    }
+    
+    h3 {
+        font-size: 16px;
+    }
+    
+    
+/* CSS HEADER */
+    /* Bandeau */
+        #bandeau {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;   
+            width: 100%;
+        }
+    
+        #logo {
+            width: 8%; 
+            height: 7%;
+            object-fit: contain;
+        }
+    
+        #menu {
+            width: 30%;
+            margin-right: 1%;
+            font-weight: bold;
+        }
+    
+        #liste {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            height: 40px;
+            padding: 0;
+        }
+    
+        .elements {
+            list-style-type: none;
+            padding-top: 4%;
+            width: 50%;
+            text-align: center;
+        }
+    
+        a {
+            color: black;
+            text-decoration: none;
+        }
+
+        header a:hover {
+            color: #0065FC;
+            border-top: 2px solid #0065FC;
+            padding-top: 10%;
+        }
+
+    /* Intro */
+        header p {
+            font-size: 16px;
+        }
+      
+    /* Barre de recherche */
+        #navigation {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            width: 30%;
+            height: 45px;
+        }
+    
+        #position {
+            font-size: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            width: 10%;
+            background-color: rgb(242, 242, 242);
+        }
+    
+        #search-input {
+            font-weight: bold;
+            width: 60%;
+            outline: none;
+            font-size: 110%;
+            border-left: none;
+            border-right: none;
+            border-top: 1px solid rgb(242, 242, 242);
+            border-bottom: 1px solid rgb(242, 242, 242);
+        }
+    
+        #search-buton { 
+            border: none;
+            background-color: #0065FC;
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+            color: white;
+            width: 30%;
+            font-weight: bold;
+            font-size: 100%;
+        }
+
+        #research {
+            display: block;
+        }
+
+        #loupe {
+            display: none;
+        }
+    
+    /* Filtres */
+        #filtre {
+            margin-top: 1%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 90%;
+        }
+    
+        #filtre-economique {
+            border: 2px solid rgb(218, 218, 218);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            margin-left: 2%;
+            width: 170px;
+            height: 45px;
+        }
+    
+        #economique {
+            border: none;
+            background: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin-left: 4%;
+            transition: 0.5s linear;
+            cursor: pointer;
+            font-family: Raleway;
+        }
+    
+        #filtre-familial {
+            border: 2px solid rgb(218, 218, 218);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            margin-left: 2%;
+            width: 140px;
+            height: 45px;
+        }
+    
+        #familial {
+            border: none;
+            background: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin-left: 4%;
+            transition: 0.5s linear;
+            cursor: pointer;
+            font-family: Raleway;
+        }
+    
+        #filtre-romantique {
+            border: 2px solid rgb(218, 218, 218);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            margin-left: 2%;
+            width: 180px;
+            height: 45px;
+        }
+        
+        #romantique {
+            border: none;
+            background: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin-left: 4%;
+            transition: 0.5s linear;
+            cursor: pointer;
+            font-family: Raleway;
+        }
+    
+        #filtre-animaux {
+            border: 2px solid rgb(218, 218, 218);
+            border-radius: 30px;
+            display: flex;
+            align-items: center;
+            margin-left: 2%;
+            width: 230px;
+            height: 45px;
+        }
+    
+        #animaux {
+            border: none;
+            background: none;
+            font-weight: bold;
+            font-size: 18px;
+            margin-left: 4%;
+            transition: 0.5s linear;
+            cursor: pointer;
+            font-family: Raleway; 
+        }
+        
+        .bleu {
+            color: #0065FC;  
+            border: 2px solid rgb(222, 235, 255);
+            width: 45px;
+            height: 45px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(222, 235, 255);
+            margin-left: -1%;
+        }
+    
+        button:hover {
+            color: #0065FC;
+        }
+    
+    /* Infos */
+        #information {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        }
+        
+        .info{ 
+            color: #0065FC;
+            border: 2px solid rgb(222, 235, 255);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            margin-right: 3%;
+        }
+    
+    
+    
+    
+    
+    
+/* CSS MAIN */
+    
+    /* Ensemble */
+        #hebergement-populaire {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 680px;
+            margin-top: 1%;
+        }
+    
+    /* Sections */
+        #section-hebergement {
+            width: 65%;
+            height: 100%;
+        }
+    
+        #section-populaire {
+            width: 30%;
+            height: 100%;
+        }
+
+    /* Prix */
+        .prix {
+            font-weight: bold;
+        }
+    
+    /* Notation */
+        .note-star-hebergement {
+            display: flex;
+            margin-top: -2%;
+        }
+        
+        .note-star-populaire {
+            display: flex;
+            margin-top: 10%;
+        }
+        
+        .note-bleu {
+            color: #0065FC;
+        }
+        
+        .note-gris {
+            color: rgb(217, 217, 217);
+        }
+    
+    
+    
+    
+    
+    /* BLOCK HEBERGEMENT A MARSEILLE */
+    
+        /* Titre */
+            #titre-hebergement {
+                width: 30%;
+                padding-top: 2%;
+                margin-left: 3%;
+                margin-top: 0;
+            }
+    
+        /* Afficher plus */
+            #afficher {
+                margin-left: 3%;
+                margin-top: 1%;
+                font-weight: bold;
+            }
+    
+        /* Gestion du block */
+            #hebergement { 
+                background:rgb(242, 242, 242);
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+            }
+        
         /* Première ligne */
-#first-line {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: -10px;
-}
-
+            #first-line {
+                display: flex;
+                justify-content: space-evenly;
+            }
+    
         /* Deuxième ligne */
-#second-line {
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 30px;
-}
-
+            #second-line {
+                display: flex;
+                justify-content: space-evenly;
+                margin-top: 3%;
+            }
+    
         /* Gestion des Cards */
-.card-hebergement {
-    width: 375px;
-    height: 250px;
-    border-radius: 30px;
-    background: white;
-}
-
+            .card-hebergement {
+                width: 31%;
+                height: 260px;
+                border-radius: 30px;
+                background: white;
+            }
+            
         /* Card Image */
-.card-image-hebergement {
-    display: flex;
-    justify-content: center;
-}
-
-.img-hebergement { 
-    width: 360px;
-    height: 150px;
-    border-top-right-radius: 30px;
-    border-top-left-radius: 30px;
-    margin-top: 5px;
-    object-fit: cover;
-}
-
+            .card-image-hebergement {
+                display: flex;
+                justify-content: center;
+            }
+            
+            .img-hebergement { 
+                width: 97%;
+                height: 150px;
+                border-top-right-radius: 30px;
+                border-top-left-radius: 30px;
+                margin-top: 1%;
+                object-fit: cover;
+            }
+    
         /* Card Texte */
-.card-body-hebergement {
-    margin-left: 20px;
-    margin-top: -5px;
-}
-        
-.card-info-hebergement {
-    margin-top: -15px;
-}
-        
-
-
-
-
-
-/* BLOCK LES PLUS POPULAIRES */
-
+            .card-body-hebergement {
+                margin-left: 7%;
+            }
+                    
+            .card-info-hebergement {
+                margin-top: -4%;
+            }
+            
+    
+    
+    
+      
+    /* BLOCK LES PLUS POPULAIRES */
+    
         /* Titre */
-#entete {
-   display: flex;
-   align-items: center;
-   justify-content: space-between;
-   width: 100%;
-   margin-top: 20px;
-   margin-bottom: -20px;
-}
-
+            #entete {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                width: 100%;
+                margin-left: 10%;
+                padding: 2%;
+                margin-bottom: -5%;
+            }
+    
         /* Icons */
-.graph {
-    font-size: 25px;
-    margin-right: 40px;
-}
-
+            .graph {
+                font-size: 25px;
+                margin-right: 13%;
+            }
+    
         /* Gestion du Block */
-#populaire {
-    background:rgb(242, 242, 242);
-    width: 100%;
-    height: 680px;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
+            #populaire {
+                background:rgb(242, 242, 242);
+                width: 100%;
+                height: 100%;
+                border-radius: 30px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+    
         /* Gestion des cards */
-.card-populaire {
-    width: 90%;
-    border-radius: 30px;
-    background: white;
-    margin-top: 20px;
-    margin-left: 5px;  
-}
-
-.ensemble-populaire {
-    display: flex;
-    flex-direction: row;
-}
-
+            .card-populaire {
+                width: 96%;
+                border-radius: 30px;
+                background: white;
+                margin-top: 6%;
+                margin-right: 1%;  
+            }
+            
+            .ensemble-populaire {
+                display: flex;
+                flex-direction: row;
+            }
+    
         /* Card Image */
-.card-image-populaire {
-    margin-left: 5px;
-}
-
-.img-populaire { 
-    width: 160px;
-    height: 140px;
-    border-top-left-radius: 30px;
-    border-bottom-left-radius: 30px;
-    margin-top: 5px;
-    object-fit: cover;
-}
-
+            .card-image-populaire {
+                margin-left: 1%;
+            }
+    
+            .img-populaire { 
+                width: 175px;
+                height: 140px;
+                border-top-left-radius: 30px;
+                border-bottom-left-radius: 30px;
+                margin-top: 2%;
+                object-fit: cover;
+            }
+    
         /* Card Texte */
-.card-body-populaire {
-    margin-left: 25px;
-    width: 50%;
-}
-
-.card-info-populaire {
-    margin-top: -15px;
-}
-
-
-
-
-
-/* BLOCK ACTIVITES A MARSEILLE */
-
+            .card-body-populaire {
+                margin-left: 8%;
+                width: 100%;
+            }
+            
+            .card-info-populaire {
+                margin-top: -3%;
+            }
+    
+    
+    
+    
+    
+    /* BLOCK ACTIVITES A MARSEILLE */
+    
         /* Ensemble */
-#activite {
-    width: 98%;
-    height: 600px;
-    margin-left: 40px;   
-    margin-top: 30px;
-    border-radius: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
+            #activite {
+                width: 100%;
+                height: 600px; 
+                margin-top: 1%;
+                border-radius: 30px;
+                display: flex;
+                flex-direction: column;
+            }
+            
         /* Titre */
-#activity-title {
-    height: 50px;
-    width: 100%;
-    margin-left: -30px;
-}
-
+            #activity-title {
+                width: 100%;
+            }
+    
         /* Colonne */
-#activity-column {
-    width: 100%;
-    height: 500px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
-
+            #activity-column {
+                width: 100%;
+                height: 550px;
+                display: flex;
+                justify-content: space-between;
+            }
+    
         /* Texte */
-.activity-text {
-    margin-left: 20px;
-    margin-block-start: 0;
-    margin-top: 10px;
-}
+            .activity-text {
+                margin-left: 8%;
+                margin-top: 3%;
+            }
+    
+        /* PREMIERE ET TROISIEME COLONNE */
+            #first-colonne {
+                background: white;
+                border-radius: 30px;
+                box-shadow: 0px 6px 5px rgb(242, 242, 242) ;
+                width: 22%;
+                height: 550px;
+            }
+            
+            #third-colonne {
+                background: white;
+                border-radius: 30px;
+                box-shadow: 0px 6px 5px rgb(242, 242, 242) ;
+                width: 22%;
+                height: 550px;
+            }
+            
+            .grande-img {
+                width: 100%;
+                height: 500px;
+                object-fit: cover;
+                border-radius: 30px;
+            }    
 
-    /* PREMIERE ET TROISIEME COLONNE */
-#first-colonne {
-    background: white;
-    border-radius: 30px;
-    box-shadow: 0px 6px 5px rgb(242, 242, 242) ;
-    width: 400px;
-    height: 520px;
-}
+        /* DEUXIEME COLONNE */
+             #second-colonne {
+                background: white;
+                border-radius: 30px;
+                width: 22%;
+                height: 550px;
+            }
+            
+            /* Haut */
+                #second-top {
+                    width: 100%; 
+                    height: 300px;
+                    border-radius: 30px;
+                    box-shadow: 0px 6px 5px rgb(242, 242, 242) ;
+                }
+                
+                #img-top-second {
+                    width: 100%;
+                    height: 250px;
+                    object-fit: cover;
+                    border-radius: 30px;
+                }
+    
+            /* Bas */
+                #second-bottom {
+                    width: 100%;
+                    height: 220px;
+                    border-radius: 30px;
+                    margin-top: 7%;
+                    box-shadow: 0px 6px 5px rgb(242, 242, 242) ;
+                }
+                
+                #img-bottom-second {
+                    width: 100%;
+                    height: 170px;
+                    object-fit: cover;
+                    border-radius: 30px;
+                }
 
-#third-colonne {
-    background: white;
-    border-radius: 30px;
-    box-shadow: 0px 6px 5px rgb(242, 242, 242) ;
-    width: 400px;
-    height: 520px;
-}
-
-.grande-img {
-    width: 400px;
-    height: 470px;
-    object-fit: cover;
-    border-radius: 30px;
-}
-
-    /* DEUXIEME COLONNE */
-#second-colonne {
-    background: white;
-    border-radius: 30px;
-    width: 400px;
-    height: 500px;
-}
-
-        /* Haut */
-#second-top {
-    width: 400px; 
-    height: 290px;
-    border-radius: 30px;
-    box-shadow: 0px 6px 5px rgb(242, 242, 242) ;
-}
-
-#img-top-second {
-    width: 400px;
-    height: 240px;
-    object-fit: cover;
-    border-radius: 30px;
-}
-
-        /* Bas */
-#second-bottom {
-    width: 400px;
-    height: 200px;
-    border-radius: 30px;
-    margin-top: 30px;
-    box-shadow: 0px 6px 5px rgb(242, 242, 242) ;
-}
-
-#img-bottom-second {
-    width: 400px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 30px;
-}
-
-    /* QUATRIEME COLONNE */
-#fourth-colonne {
-    background: white;
-    border-radius: 30px;
-    width: 400px;
-    height: 500px;
-}
-
-        /* Haut */
-#fourth-top {
-    width: 400px;
-    height: 230px;
-    border-radius: 30px;
-    box-shadow: 0px 6px 5px rgb(242, 242, 242);
-}
-
-#img-top-fourth {
-    width: 400px;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 30px;
-}
-
-        /* Bas */
-#fourth-bottom {
-    width: 400px;
-    height: 260px;
-    border-radius: 30px;
-    margin-top: 30px;
-    box-shadow: 0px 6px 5px rgb(242, 242, 242);
-}
-
-#img-bottom-fourth {
-    width: 400px;
-    height: 210px;
-    object-fit: cover;
-    border-radius: 30px;
-}
-
-
-
-
-
-
+        /* QUATRIEME COLONNE */
+            #fourth-colonne {
+                background: white;
+                border-radius: 30px;
+                width: 22%;
+                height: 550px;
+            }
+    
+            /* Haut */
+                #fourth-top {
+                    width: 100%;
+                    height: 250px;
+                    border-radius: 30px;
+                    box-shadow: 0px 6px 5px rgb(242, 242, 242);
+                }
+    
+                #img-top-fourth {
+                    width: 100%;
+                    height: 200px;
+                    object-fit: cover;
+                    border-radius: 30px;
+                }
+    
+            /* Bas */
+                #fourth-bottom {
+                    width: 100%;
+                    height: 270px;
+                    border-radius: 30px;
+                    margin-top: 7%;
+                    box-shadow: 0px 6px 5px rgb(242, 242, 242);
+                }
+                
+                #img-bottom-fourth {
+                    width: 100%;
+                    height: 220px;
+                    object-fit: cover;
+                    border-radius: 30px;
+                }
+    
+    
+    
+    
+    
+    
 /* CSS FOOTER */
-#renseignements {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    width: 100%;
-    height: 300px;
-    margin-top: 40px;
-    background: rgb(242, 242, 242);
-}
-
-.block-renseignements {
-    display: flex;
-    flex-direction: column;
-}
-
-footer a {
-    margin-top: 20px;
-}
-
+    #renseignements {
+        display: flex;
+        flex-direction: row;
+        justify-content: start;
+        width: 100%;
+        height: 300px;
+        margin-top: 3%;
+        background: rgb(242, 242, 242);
+    }
+    
+    .block-renseignements {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    footer a {
+        margin-top: 10%;
+    }
+    
     /* A PROPOS */
-#footer-propos { 
-    display: flex;
-    flex-direction: column;
-    margin-right: 300px;
-    margin-left: 40px;
-    margin-top: 40px;
-}
-
+        #footer-propos { 
+            display: flex;
+            flex-direction: column;
+            margin-right: 20%;
+            margin-left: 3%;
+            margin-top: 2%;
+        }
+    
     /* NOS HEBERGEMENTS */
-#footer-hebergement {
-    display: flex;
-    flex-direction: column;
-    margin-right: 300px;
-    margin-top: 40px;
-}
-
+        #footer-hebergement {
+            display: flex;
+            flex-direction: column;
+            margin-right: 20%;
+            margin-top: 2%;
+        }
+    
     /* ASSISTANCE */
-#footer-assistance {
-    display: flex;
-    flex-direction: column;
-    margin-top: 40px;
-}
+        #footer-assistance {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2%;
+        }
 
 
-@media all and (max-width : 768px) {
+
+
+
+
+
+
+
+/* MEDIA QUERIES 768px*/
+    @media all and (max-width : 768px) {
     /* HEADER */
-#bandeau {
-    flex-direction: column;
-}
-#navigation{
-    margin: none;
-}
-#filtre {
-    margin-left: 0px;
-    margin-right: 0px;
-    flex-wrap: wrap;
-}
+        /* BANDEAU */
+            #bandeau {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            #menu {
+                width: 100%;
+            }
+
+            #logo {
+                margin-left: 40%;
+                width: 20%;
+            }
+
+            header a:hover {
+                border-top: none;
+                padding-top: 0;
+            }
+
+            #liste {
+                width: 100%;
+                border-bottom: 2px solid rgb(242, 242, 242);
+            
+            }
+
+            .elements {
+                width: 50%;
+                text-align: center;
+                padding: 0;
+            }
+
+            .elements:hover {
+                border-bottom: 2px solid #0065FC;
+                padding-bottom: 10px;
+            }
+    
+        /* BARRE DE RECHERCHE */
+            #navigation{
+                width: 60%;
+                margin-left: -10%;
+                margin-top: 5%;
+            }
+
+            #search-buton{
+                background-color: #0065FC;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                color: white;
+                width: 10%;
+                font-weight: bold;
+                font-size: 110%;
+            }
+
+            #loupe {
+                display: block;
+            }
+
+            #research {
+                display: none;
+            }
+    
+        /* FILTRES */
+            #filtre {
+                flex-wrap: wrap;
+                margin-right: -200px;
+                margin-top: 5%;
+            }
+
+
     /* MAIN */
 
-#hebergement-populaire {
-     flex-direction: column-reverse;
-    width: auto;
-}
-    /* SECTION HEBERGEMENT */
+        #hebergement-populaire {
+            flex-direction: column-reverse;
+            width: auto;
+            height: auto;
+        }
 
-#hebergement {
-    background: none;
-    width: max-content;
-    height: auto;
-}
+        /* SECTION HEBERGEMENT */
 
-#titre-hebergement {
-    width: max-content;
-}
-#first-line {
-    flex-direction: column;
-    justify-content: center;
-}
+            #hebergement {
+                background: none;
+                width: 100%;
+                height: 100%;
+            }
 
-#second-line {
-    flex-direction: column;
-}
-    /* SECTION POPULAIRE */
-#section-populaire {
-    width: max-content;
-}
-    /* SECTION ACTIVITE */
-#activite {
-    height: auto;
-    width: max-content;
-}
-#activity-column {
-    flex-direction: column;
-}
+            #titre-hebergement {
+                width: 100%;
+                margin-top: 10%;
+                margin-left: -10%;
+            }
 
-.grande-img, #img-top-second, #img-bottom-second, #img-bottom-fourth{
-    width: 400px;
-    height: 180px;
-}
+            #first-line {
+                flex-direction: column;
+            }
 
-#first-colonne, #third-colonne, #second-bottom, #second-top, #fourth-bottom {
-    width: 400px;
-    height: 230px;
-}
+            #second-line {
+                flex-direction: column;
+            }
+
+            .card-hebergement {
+                margin-top: 5%;
+                margin-left: 15%;
+                width: 70%;
+                box-shadow: 0px 6px 5px rgb(242, 242, 242) ;
+            }
+
+            #afficher {
+                margin-left: -10%;
+            }
+
+        /* SECTION POPULAIRE */
+            #section-populaire {
+                width: 100%;
+            }
+
+            #populaire {
+                height: 680px;
+            }
+
+            .note-star-populaire {
+                margin-top: 5%;
+            }
+
+            #entete {
+                padding: 0;
+                margin-left: 0;
+                margin-top: 2%;
+            }
+
+        /* SECTION ACTIVITE */
+            #activite {
+                width: 100%;
+                height: 100%;
+                margin-top: 5%;
+            }
+
+            #activity-title {
+                margin-left: 9%;
+                width: 80%;
+            }
+
+            #activity-column {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                margin-top: 5%;
+            }
+
+            #second-bottom, #fourth-bottom {
+                margin-top: 11%;
+            }
+
+            #second-colonne, #third-colonne, #fourth-colonne {
+                margin-top: 5%;
+                width: 55%;
+            }
+
+            #second-top, #second-bottom, #fourth-top, #fourth-bottom {
+                width: 100%;
+                height: 250px;
+            }
+
+            #first-colonne, #third-colonne {
+                width: 55%;
+                    height: 250px;
+            }
+
+            .grande-img, #img-top-second, #img-bottom-second, #img-top-fourth, #img-bottom-fourth {
+                height: 200px;
+            }
+
 
     /* FOOTER */
-#renseignements {
-    flex-direction: column;
-    height: auto;
-    width: max-content;
-    margin-top: 1000px;
-}
-#footer-hebergement {
-    margin-left:40px;
-}
-#footer-assistance {
-    margin-left:40px;
+        #renseignements {
+            flex-direction: column;
+            height:100%;
+            width: 100%;
+            margin-top: 3%;
+        }
+
+        #footer-propos {
+            margin-left: 10%;
+        }
+
+        #footer-hebergement {
+            margin-left: 10%;
+        }
+
+        #footer-assistance {
+            margin-left:10%;
+        }
+
+        footer a {
+            margin-top: 2%;
+        }
 }
 
 
+
+
+
+
+
+
+
+
+/* MEDIA QUERIES 992px*/
+    @media all and (min-width : 769px) and (max-width : 991px) {
+    /* HEADER */
+        /* BANDEAU */
+            #bandeau {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            #menu {
+                width: 100%;
+            }
+
+            #logo {
+                margin-left: 40%;
+                width: 20%;
+            }
+
+            header a:hover {
+                border-top: none;
+                padding-top: 0;
+            }
+
+            #liste {
+                width: 100%;
+                border-bottom: 2px solid rgb(242, 242, 242);
+            
+            }
+
+            .elements {
+                width: 50%;
+                text-align: center;
+                padding: 0;
+            }
+
+            .elements:hover {
+                border-bottom: 2px solid #0065FC;
+                padding-bottom: 10px;
+            }
+    
+        /* BARRE DE RECHERCHE */
+            #navigation{
+                width: 60%;
+                margin-left: -10%;
+                margin-top: 5%;
+            }
+
+            #search-buton{
+                background-color: #0065FC;
+                border-top-right-radius: 10px;
+                border-bottom-right-radius: 10px;
+                color: white;
+                width: 10%;
+                font-weight: bold;
+                font-size: 110%;
+            }
+
+            #loupe {
+                display: block;
+            }
+
+            #research {
+                display: none;
+            }
+
+    
+        /* FILTRE */
+            #filtre {
+                flex-wrap: wrap;
+                margin-right: -200px;
+                margin-top: 5%;
+            }
+
+
+    /* MAIN */
+
+        #hebergement-populaire {
+            flex-direction: column-reverse;
+            width: auto;
+            height: auto;
+        }
+
+        /* SECTION HEBERGEMENT */
+
+            #hebergement {
+                background: none;
+                width: 100%;
+                height: 100%;
+            }
+
+            #titre-hebergement {
+                width: 100%;
+                margin-top: 10%;
+                margin-left: -10%;
+            }
+
+            #first-line {
+                flex-direction: column;
+            }
+
+            #second-line {
+                flex-direction: column;
+            }
+
+            .card-hebergement {
+                margin-top: 5%;
+                margin-left: 15%;
+                width: 70%;
+                box-shadow: 0px 6px 5px rgb(242, 242, 242) ;
+            }
+
+            #afficher {
+                margin-left: -10%;
+            }
+
+        /* SECTION POPULAIRE */
+            #section-populaire {
+                width: 100%;
+            }
+
+            #populaire {
+                height: 680px;
+            }
+
+            .note-star-populaire {
+                margin-top: 5%;
+            }
+
+            #entete {
+                padding: 0;
+                margin-left: 0;
+                margin-top: 2%;
+            }
+
+        /* SECTION ACTIVITE */
+            #activite {
+                width: 100%;
+                height: 100%;
+                margin-top: 5%;
+            }
+
+            #activity-title {
+                margin-left: 9%;
+                width: 80%;
+            }
+
+            #activity-column {
+                flex-direction: column;
+                align-items: center;
+                width: 100%;
+                height: 100%;
+                margin-top: 5%;
+            }
+
+            #second-bottom, #fourth-bottom {
+                margin-top: 11%;
+            }
+
+            #second-colonne, #third-colonne, #fourth-colonne {
+                margin-top: 5%;
+                width: 55%;
+            }
+
+            #second-top, #second-bottom, #fourth-top, #fourth-bottom {
+                width: 100%;
+                height: 250px;
+            }
+
+            #first-colonne, #third-colonne {
+                width: 55%;
+                height: 250px;
+            }
+
+            .grande-img, #img-top-second, #img-bottom-second, #img-top-fourth, #img-bottom-fourth {
+                height: 200px;
+            }
+
+    /* FOOTER */
+        #renseignements {
+            flex-direction: column;
+            height:100%;
+            width: 100%;
+            margin-top: 3%;
+        }
+
+        #footer-propos {
+            margin-left: 10%;
+        }
+
+        #footer-hebergement {
+            margin-left: 10%;
+        }  
+
+        #footer-assistance {
+            margin-left:10%;
+        }
+
+        footer a {
+            margin-top: 2%;
+        }
 }

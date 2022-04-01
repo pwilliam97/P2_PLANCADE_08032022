@@ -11,6 +11,7 @@
 <body>
     <!-- HEADER -->
     <header id="header">
+        <!-- BANDEAU -->
         <div id="bandeau">
             <img src="images/logo/Booki.png" alt="Logo Booki" id="logo">
             <nav id="menu">
@@ -20,15 +21,18 @@
                 </ul>
             </nav>
         </div>
+        <!-- INTRO -->
         <div>
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
         </div>
+        <!-- BARRE DE RECHERCHE -->
         <div id="navigation">
             <i class="fa-solid fa-location-dot" id="position"></i>
             <input type="search" placeholder="Marseille, France" id="search-input">
-            <button id="search-buton">Rechercher</button>
+            <button id="search-buton"><span id="research">Rechercher</span><i class="fa-solid fa-magnifying-glass" id="loupe"></i></button>
         </div>
+        <!-- FILTRE -->
         <div id="filtre">
             <h3>Filtres</h3>
             <div id="filtre-economique">
@@ -48,6 +52,7 @@
                 <button id="animaux" class="button-animation">Animaux autorisés</button>
             </div>
         </div>
+        <!-- INFO -->
         <div id="information">
             <i class="fa-solid fa-info info"></i>
             <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -295,12 +300,15 @@
             </div>
             <div id="activity-column">
                 <!-- PREMIERE COLONNE -->
-                <a href="#">
-                    <div id="first-colonne">
-                        <img class="grande-img" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
-                        <h4 class="activity-text">Vieux Port</h4>
-                    </div>
-                </a>
+                <div id="first-colonne">
+                    <a href="#">
+                        <div >
+                            <img class="grande-img" src="images/activites/3_medium/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port">
+                            <h4 class="activity-text">Vieux Port</h4>
+                        </div>
+                    </a>
+                </div>
+                
                 <!-- SECONDE COLONNE -->
                 <div id="second-colonne">
                     <a href="#">
@@ -317,12 +325,15 @@
                     </a>
                 </div>
                 <!-- TROISIEME COLONNE -->
-                <a href="#">
-                    <div id="third-colonne">
-                        <img class="grande-img" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
-                        <h4 class="activity-text">Parc National des Calanques</h4>
-                    </div>
-                </a>
+                <div id="third-colonne">
+                    <a href="#">
+                        <div>
+                            <img class="grande-img" src="images/activites/3_medium/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc National des Calanques">
+                            <h4 class="activity-text">Parc National des Calanques</h4>
+                        </div>
+                    </a>
+                </div>
+                
                 <!-- QUATRIEME COLONNE -->
                 <div id="fourth-colonne">
                     <a href="#">
